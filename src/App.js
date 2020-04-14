@@ -52,9 +52,8 @@ function App() {
         <input className="search-bar" type="text" value={search} onChange={setInputSearch}/>
         <button className = "search-button" type="submit">Search</button>
 
-      </form>
-      
-        <div className="">
+      </form>      
+       
           {recipes.map(recipe =>(
             <Recipe 
             key={recipe.recipe.label}
@@ -65,7 +64,7 @@ function App() {
             healthInfo={recipe.recipe.healthLabels}
             />
           ))}
-      </div>
+      
     </div>
   );
 }
